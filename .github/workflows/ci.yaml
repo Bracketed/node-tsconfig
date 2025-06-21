@@ -13,7 +13,7 @@ jobs:
         secrets:
             BRSFTWORKS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            project-name: '@bracketed/package'
+            project-name: '@bracketed/typescript-config'
             checkout-depth: 2
             checkout-ref: master
             cancel-on-same: true
