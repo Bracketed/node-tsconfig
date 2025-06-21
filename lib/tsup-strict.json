@@ -1,8 +1,4 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig",
-	"extends": ["./tsconfig.json", "./extra-strict.json", "./tsup-strict-package.json"],
-	"compileOnSave": true,
-	"compilerOptions": {
-		"outDir": "./dist"
-	}
+	"extends": ["./tsup.json", "./extra-strict.json"]
 }
