@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@bracketed/package@workspace:.":
+"@bracketed/typescript-config@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@bracketed/package@workspace:."
+  resolution: "@bracketed/typescript-config@workspace:."
   dependencies:
     prettier: "npm:^3.5.3"
     tslib: "npm:^2.8.1"
