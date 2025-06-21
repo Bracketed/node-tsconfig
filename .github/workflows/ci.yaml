@@ -5,7 +5,22 @@ on:
     push:
 
 jobs:
+    verify:
+        uses: Bracketed/Workflows/.github/workflows/Version-Check.yml@main
+        name: Version Check
+        permissions:
+            contents: write
+            actions: write
+        secrets:
+            BRSFTWORKS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            project-name: '@bracketed/typescript-config'
+            checkout-depth: 2
+            checkout-ref: main
+            cancel-on-same: true
+
     publish:
+        needs: [verify]
         uses: Bracketed/Workflows/.github/workflows/Package-Publish.yml@main
         permissions:
             contents: write
@@ -13,7 +28,7 @@ jobs:
             actions: write
         with:
             project-name: '@bracketed/typescript-config'
-            checkout-ref: master
+            checkout-ref: main
             build: false
         secrets:
             BRSFTWORKS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
