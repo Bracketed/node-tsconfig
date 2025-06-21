@@ -1,5 +1,6 @@
 {
-	"extends": ["@bracketed/typescript-config", "@bracketed/typescript-config/extra-strict"],
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": ["./tsconfig.json", "./extra-strict.json"],
 	"compileOnSave": true,
 	"compilerOptions": {
 		"noEmit": true,
@@ -39,7 +40,5 @@
 		"sourceMap": true,
 		"strict": true,
 		"useDefineForClassFields": true
-	},
-	"include": ["src"],
-	"exclude": ["lib", "node_modules", "test.ts", "tsup.config.ts"]
+	}
 }
