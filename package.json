@@ -2,7 +2,7 @@
 	"name": "@bracketed/typescript-config",
 	"description": "Typescript Config files to make coding easier!",
 	"packageManager": "yarn@4.9.2",
-	"version": "4.6.0",
+	"version": "4.7.0",
 	"publishConfig": {
 		"access": "public"
 	},
